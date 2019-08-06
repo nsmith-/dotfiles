@@ -35,8 +35,6 @@ fi
 # Make git stop searching before hitting /afs networked directory
 export GIT_CEILING_DIRECTORIES=/afs/hep.wisc.edu
 
-# Aliases
-alias procrastinate="watch -n 30 'condor_q nsmith | tail -n 40'"
 
 # Shortcuts
 export egrates=/afs/hep.wisc.edu/cms/nsmith/CMSSW_6_2_0_SLHC12_patch1/src/SLHCUpgradeSimulations/L1EGRateStudies/
