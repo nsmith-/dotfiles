@@ -217,6 +217,7 @@ nnoremap <leader>n :nohlsearch<CR>
 
 " edit vimrc
 nnoremap <leader>v :tabe ~/dotfiles/.vimrc<CR>
+nnoremap <Leader>vr :source $MYVIMRC<CR>
 
 " make
 nnoremap <leader>m :make<CR>
@@ -256,6 +257,16 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'rhysd/vim-clang-format'
+let g:clang_format#style_options = {
+            \ "BasedOnStyle" : "llvm",
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "Standard" : "C++17"}
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+autocmd FileType c,cpp,objc set colorcolumn=80
 
 " For vimdiff
 Plugin 'vim-scripts/diffchar.vim'
