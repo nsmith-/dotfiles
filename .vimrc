@@ -120,7 +120,7 @@ if exists(':Files')
 endif
 
 set background=dark
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 colorscheme solarized
 
 if !empty($CMSSW_BASE)
