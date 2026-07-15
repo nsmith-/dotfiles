@@ -114,7 +114,9 @@ augroup dotfiles
   autocmd BufWinEnter *.txt if &filetype ==# 'help' | wincmd H | nnoremap <buffer> q :quit<CR> | endif
 augroup END
 
-" fzf.vim commands are available after installing fzf and fzf.vim as packages.
+" Load native packages before checking for fzf.vim commands.
+packloadall
+
 if exists(':Files')
   nnoremap <leader>t :Files<CR>
   nnoremap <leader>b :Buffers<CR>
