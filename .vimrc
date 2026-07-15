@@ -44,10 +44,6 @@ set splitbelow splitright
 set nolist
 set listchars=tab:\ \ ,eol:¬,trail:·,extends:»,precedes:«
 
-if exists('+termguicolors') && &term =~# '256color\|xterm\|screen\|tmux'
-  set termguicolors
-endif
-
 if has('gui_running')
   set guioptions=cMg
   if has('mac')
@@ -122,6 +118,10 @@ if exists(':Files')
   nnoremap <leader>b :Buffers<CR>
   nnoremap <leader>g :Rg<CR>
 endif
+
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 if !empty($CMSSW_BASE)
   execute 'set path+=' . fnameescape($CMSSW_BASE . '/src')
