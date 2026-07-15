@@ -301,28 +301,28 @@ nnoremap <leader>P :Gpush<CR>
 nnoremap <leader>gl :Glog<CR>
 
 " FuzzyFinder "{{{
-if v:version > 702
-  Plugin 'L9'
-  Plugin 'FuzzyFinder'
-  let g:fuf_modesDisable = []
-  nnoremap <leader>h :FufHelp<CR>
-  nnoremap <leader>1  :FufTagWithCursorWord<CR>
-  nnoremap <leader>11 :FufTag<CR>
-  nnoremap <leader>2  :FufFileWithCurrentBufferDir<CR>
-  nnoremap <leader>22 :FufFile<CR>
-  nnoremap <leader>3  :FufBuffer<CR>
-  nnoremap <leader>4  :FufDirWithCurrentBufferDir<CR>
-  nnoremap <leader>44 :FufDir<CR>
-  nnoremap <leader>5  :FufBufferTag<CR>
-  nnoremap <leader>55 :FufBufferTagAll<CR>
-  nnoremap <leader>6  :FufMruFile<CR>
-  nnoremap <leader>7  :FufLine<CR>
-  nnoremap <leader>8  :FufChangeList<CR>
-  nnoremap <leader>9  :FufTaggedFile<CR>
-  nnoremap <leader>r  :FufRenewCache<CR>
-  let fuf_keyOpen = '<C-l>'
-  let fuf_keyOpenTabpage = '<CR>'
-endif
+" if v:version > 702
+"   Plugin 'L9'
+"   Plugin 'FuzzyFinder'
+"   let g:fuf_modesDisable = []
+"   nnoremap <leader>h :FufHelp<CR>
+"   nnoremap <leader>1  :FufTagWithCursorWord<CR>
+"   nnoremap <leader>11 :FufTag<CR>
+"   nnoremap <leader>2  :FufFileWithCurrentBufferDir<CR>
+"   nnoremap <leader>22 :FufFile<CR>
+"   nnoremap <leader>3  :FufBuffer<CR>
+"   nnoremap <leader>4  :FufDirWithCurrentBufferDir<CR>
+"   nnoremap <leader>44 :FufDir<CR>
+"   nnoremap <leader>5  :FufBufferTag<CR>
+"   nnoremap <leader>55 :FufBufferTagAll<CR>
+"   nnoremap <leader>6  :FufMruFile<CR>
+"   nnoremap <leader>7  :FufLine<CR>
+"   nnoremap <leader>8  :FufChangeList<CR>
+"   nnoremap <leader>9  :FufTaggedFile<CR>
+"   nnoremap <leader>r  :FufRenewCache<CR>
+"   let fuf_keyOpen = '<C-l>'
+"   let fuf_keyOpenTabpage = '<CR>'
+" endif
 " " }}}
 
 Plugin 'kien/ctrlp.vim'
