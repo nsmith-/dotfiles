@@ -22,5 +22,3 @@ fi
 # Store X display location for screen use
 # use setupX to retrieve it in current environment
 echo $DISPLAY > ~/.Xdisplay
-
-
